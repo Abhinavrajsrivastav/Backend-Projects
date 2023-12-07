@@ -25,7 +25,7 @@ public class Create_DB {
     static final String DB_URL = "jdbc:mysql://localhost:3306/";
     static final String DB_Name = "apple";
     static final String USER = "root";
-    static final String PASS = "Abhinav123";
+    static final String PASS = "####";
 
     // Create_Table method...
     public static void Create_Table() {
