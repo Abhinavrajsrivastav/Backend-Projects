@@ -25,7 +25,7 @@ public class Create_DB {
     static final String DB_URL = "jdbc:mysql://localhost:3306/";
     static final String DB_Name = "apple";
     static final String USER = "root";
-    static final String PASS = "####";
+    static final String PASS = "###";
 
     // Create_Table method...
     public static void Create_Table() {
@@ -39,7 +39,7 @@ public class Create_DB {
             // String sql = "insert into friends values('Abhinav',21)";
             //sql queries String...
             // String sql = "insert into friends values(?,?)";
-            String sql = "Select * from friends";
+            String sql = "insert into friends values('Archit',22)";
 
             //psmt is an object of PreparedStatement class...
             PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -49,20 +49,20 @@ public class Create_DB {
             // pstmt.setInt(2, 20);
 
             //executeUpdate method is used to execute the sql query...
-            ResultSet result =   pstmt.executeQuery(sql);
+            // ResultSet result =   pstmt.executeQuery(sql);
 
-            while(result.next()){
-                System.out.print(result.getString(1));
-                System.out.println(result.getInt(2));
-            }
+            // while(result.next()){
+            //     System.out.print(result.getString(1));
+            //     System.out.println(result.getInt(2));
+            // }
 
-            // stmt.execSuteUpdate(sql);
+            stmt.executeUpdate(sql);
 
             //close the connection object...
             conn.close();
 
             //print the message...
-            System.out.println("Data Printedted successfully...");
+            System.out.println("Data inserted successfully...");
         } 
 
         //catch block...
