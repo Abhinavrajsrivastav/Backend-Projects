@@ -1,4 +1,5 @@
-package BankingSystem_;
+package Students;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.Scanner;
@@ -52,7 +53,7 @@ public class App {
 
         //switch statement to handle user input
         switch(choice){
-              case 1:
+            case 1:
                 add.addStudent();
                 break;
             case 2:
@@ -65,7 +66,7 @@ public class App {
                 System.out.println("Invalid choice");
                 break;   
         }
-    System.out.println("--------------------------------------------------");
+        System.out.println("--------------------------------------------------");
     System.out.println("Do you want to continue? (1/0)");
     int ch = input.nextInt();
     if(ch == 0){
@@ -74,9 +75,11 @@ public class App {
         System.out.println("------------------------------");
     }
 }
+connection.close();
         }
     catch(Exception e){
         e.printStackTrace();
     }
+
 }
 }

@@ -1,5 +1,4 @@
-package BankingSystem_;
-
+package Students; 
 // RemoveStudent.java
 import java.sql.Connection;
 import java.sql.PreparedStatement;
