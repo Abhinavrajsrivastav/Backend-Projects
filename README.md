@@ -28,14 +28,9 @@ Each backend project is self-contained in its respective folder. Follow the inst
 
 ## Installation
 
-1. Clone this repository:
-
-   ```bash
-   https://github.com/Abhinavrajsrivastav/Java_projects.git
-
-2. Fork this repository
-3. Clone it
-4. ```bash
+1. Fork this repository
+2. Clone it
+3. ```bash
    git clone https://github.com/Abhinavrajsrivastav/Java_projects.git
 
 ## Now explore the Projects ✨
