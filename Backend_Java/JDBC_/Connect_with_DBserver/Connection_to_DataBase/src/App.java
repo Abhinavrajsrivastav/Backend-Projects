@@ -8,7 +8,7 @@ public class App {
         try{
             String url = "jdbc:mysql://localhost:3306";
             String user = "root";
-            String pass = "Abhinav123";
+            String pass = "###";
 
             Connection conn = DriverManager.getConnection(url,user,pass);
             System.out.println("Successfully connected");

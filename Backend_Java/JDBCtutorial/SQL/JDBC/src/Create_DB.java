@@ -14,10 +14,6 @@ import java.sql.SQLException;
 //5 Statement interface is used to execute SQL queries.
 import java.sql.Statement;
 
-import com.mysql.cj.protocol.Resultset;
-//Prepare Statement is used to execute parameterized query.
-import com.mysql.cj.x.protobuf.MysqlxPrepare.Prepare;
-
 //Create class Create_DB...
 public class Create_DB {
 
