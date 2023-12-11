@@ -9,7 +9,7 @@ public class App {
     //database credentials
     private static final String url = "jdbc:mysql://localhost:3306/students";
     private static final String username = "root";
-    private static final String password = "###";
+    private static final String password = "####";
 
 
     public static void main(String[] args) throws Exception {
@@ -31,6 +31,7 @@ public class App {
             AddStudent add = new AddStudent(connection, scanner);
             RemoveStudent remove = new RemoveStudent(connection, scanner);
             View view = new View(connection, scanner);
+            Update update = new Update(connection,scanner);
 
 
 
@@ -40,13 +41,14 @@ public class App {
         System.out.println("1. Add a student");
         System.out.println("2. Remove a student");
         System.out.println("3. View all students");
-        System.out.println("4. No I don't want to do anything");
+        System.out.println("4. Update a student");
+        System.out.println("5. No I don't want to do anything");
 
         //get user input
         Scanner input = new Scanner(System.in);
         int choice = input.nextInt();
         
-        if(choice == 4){
+        if(choice == 5){
             System.out.println("Thank you for using our Student Management system");
             return;
         }
@@ -61,6 +63,9 @@ public class App {
                 break;
             case 3:
                 view.viewStudents();
+                break;
+            case 4:
+                update.updateStudent();
                 break;
             default:
                 System.out.println("Invalid choice");
