@@ -5,15 +5,15 @@ This repository contains a collection of Java backend projects. Each project is 
 
 - **Project 1:**
   - Description: Brief description of How to connect the MySQL database with the Web server using JDBC.
-  - Folder: `/backend/JDBC_`
+  - Folder: `/backend_JAVA/JDBC_`
 
 - **Project 2:**
   - Description: Brief description of how to inset data in the a database.
-  - Folder: `/backend/JDBCTUTORIAL`
+  - Folder: `/backend_JAVA/JDBCTUTORIAL`
 
 - **Project 3:**
   - Description: A Student Management System.
-  - Folder: `/backend/Management`
+  - Folder: `/backend_JAVA/Management`
 
 ...
 
